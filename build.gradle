@@ -1,0 +1,15 @@
+def groovyVersion = 'groovy-2.1.6'
+
+apply plugin: 'java'
+
+repositories {
+   maven {
+       url 'https://repository.apache.org/content/repositories/orgapachehbase-1078'
+   }
+   mavenCentral()
+}
+
+dependencies {
+    // change to 1.0.0 and the build will work.
+    compile "org.apache.hbase:hbase-server:1.1.0"
+}
